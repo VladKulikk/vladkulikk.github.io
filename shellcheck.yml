@@ -1,3 +1,4 @@
+---
 name: Shellcheck
 
 on:
@@ -11,7 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Run shellcheck
-        uses: ludeeus/action-shellcheck@2.0.0
+        uses: actions/shellcheck-action@v1
         with:
           shell: bash
           exclude: |
